@@ -25,10 +25,10 @@ class User extends Controller
         $email_id = $request->input('email');
         $password = $request->input('password');
         $encPassword = hash('sha256', $password);
-        $products = DB::table('users')->where('email_id', $email_id)->where('password',$encPassword)->get();
-        
-        if($products->count()>0){
-            return view('dashboard');
+        $dataUser = DB::table('users')->where('email_id', $email_id)->where('password',$encPassword)->get();
+        $data = json_decode($dataUser, true);
+        if($dataUser->count()>0){
+            return view('dashboard',['data'=>$data]);
         }
         else{
             return view('homepage');
