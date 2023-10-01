@@ -9,7 +9,7 @@
 </head>
 <body>
     
-<nav class="bg-indigo-400 border-gray-200 dark:bg-gray-900">
+<nav class=" bg-indigo-500 border-gray-200 dark:bg-gray-900">
   <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
     <a href="https://flowbite.com/" class="flex items-center">
             <img src="{{asset('icons/logo.jpeg')}}" class="h-12 mx-2 rounded-full" alt="Flowbite Logo" />
@@ -22,15 +22,15 @@
         </svg>
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:bg-indigo-400 md:text-lg md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:bg-indigo-500 md:text-lg md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="/home" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+          <a href="{{route('home')}}" class="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-300  md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
         </li>
         <li>
-          <a href="/sign-up" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sign-up</a>
+          <a href="{{route('sign-up')}}" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-indigo-300 font-bold md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sign-up</a>
         </li>
         <li>
-          <a href="/sign-in" class="block py-2 pl-3 pr-4 text-gray-900 bg-indigo-600 rounded md:text-gray-200 md:px-4 md:shadow-md md:shadow-indigo-200 hover:bg-gray-100 md:hover:bg-indigo-500 md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sign-in</a>
+          <a href="{{route('sign-in')}}" class="block font-semibold py-2 pl-3 pr-4 text-gray-900 bg-indigo-400 rounded md:text-black md:px-4 md:shadow-md md:shadow-indigo-700 hover:bg-gray-100 md:hover:bg-indigo-300 md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sign-in</a>
         </li>
       </ul>
     </div>
