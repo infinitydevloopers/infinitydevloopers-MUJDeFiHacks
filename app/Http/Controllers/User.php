@@ -20,4 +20,17 @@ class User extends Controller
         return redirect('/');
 
     }
+
+    public function sign_in_user(Request $request) {
+        $email_id = $request->input('emailId');
+        $password = $request->input('password');
+        $encPassword = hash('sha256', $password);
+        $products = DB::table('users')->where('email_id', $email_id)->where('password',$encPassword)->get();
+        if($products->count()>0){
+            return redirect('/dashboard');
+        }
+        else{
+            return('/sign-in');
+        }
+    }
 }

@@ -26,3 +26,6 @@ Route::get('/sign-up', function () {
 })->name('sign-up');
 
 Route::post('/register','App\Http\Controllers\User@register')->name('register-user');
+
+Route::post('/sign-in-user','App\Http\Controllers\User@sign_in_user')->name('sign-in-user');
+
