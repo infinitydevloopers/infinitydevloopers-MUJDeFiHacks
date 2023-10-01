@@ -2,7 +2,7 @@
     body {
         font-family: Arial, sans-serif;
         background-color: #3f51b5;
-        /* Indigo background color */
+    
         color: white;
         margin: 0;
         padding: 0;
@@ -44,7 +44,7 @@
 
     .btn {
         background-color: #2196F3;
-        /* Blue button color */
+        
         color: white;
         padding: 10px 20px;
         border: none;
@@ -54,7 +54,7 @@
 
     .btn:hover {
         background-color: #1976D2;
-        /* Darker blue color on hover */
+      
     }
 </style>
 <div class="container">
@@ -73,7 +73,7 @@
     </div>
 </div>
 <?php
-// Database connection setup (replace with your database credentials)
+
 $servername = "localhost";
 $username = "your_username";
 $password = "your_password";
@@ -81,7 +81,7 @@ $dbname = "your_database_name";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -89,7 +89,6 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $loanAmount = $_POST["loanAmount"];
 
-    // Query to fetch lenders who can lend the requested amount
     $sql = "SELECT lending_id, user_id FROM lending WHERE amount_lend >= $loanAmount";
 
     $result = $conn->query($sql);
@@ -101,7 +100,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $lendingId = $row["lending_id"];
             $userId = $row["user_id"];
 
-            // Fetch user details from the main user table
             $userSql = "SELECT name, email FROM user WHERE user_id = $userId";
             $userResult = $conn->query($userSql);
 

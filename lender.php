@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #3f51b5; /* Indigo background color */
+            background-color: #3f51b5;  
             color: white;
             margin: 0;
             padding: 0;
@@ -40,7 +40,7 @@
             border-radius: 5px;
         }
         .btn {
-            background-color: #2196F3; /* Blue button color */
+            background-color: #2196F3;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -48,7 +48,7 @@
             cursor: pointer;
         }
         .btn:hover {
-            background-color: #1976D2; /* Darker blue color on hover */
+            background-color: #1976D2; 
         }
     </style>
 </head>
@@ -75,16 +75,13 @@
     </div>
 
     <script>
-        // JavaScript function to calculate profit
+     
         function calculateProfit() {
-            // Get loan amount and interest rate from the form
             const loanAmount = parseFloat(document.getElementById('loanAmount').value);
             const interestRate = parseFloat(document.getElementById('interestRate').value);
 
-            // Calculate profit
             const profit = (loanAmount * interestRate) / 100;
 
-            // Display the result
             document.getElementById('totalProfit').textContent = profit.toFixed(2);
         }
     </script>
