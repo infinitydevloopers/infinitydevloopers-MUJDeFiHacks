@@ -29,3 +29,15 @@ Route::post('/register','App\Http\Controllers\User@register')->name('register-us
 
 Route::post('/sign-in-user','App\Http\Controllers\User@sign_in_user')->name('sign-in-user');
 
+
+Route::get('/lender', function () {
+    return view('lender');
+})->name('lender');
+
+Route::get('/borrower', function () {
+    return view('borrower');
+})->name('borrower');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
