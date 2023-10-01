@@ -1,10 +1,5 @@
-# Infinity devloopers-MUJDeFiHacks
+# Infinity devloopers MUJ Defi Hackathon 
 
-## To install tailwindcss
-```
-npm install -D tailwindcss postcss-cli autoprefixer
-```
-## Run tailwindcss  
-```
-npm run postcss
-```
+## Packages to install 
+- composer create-project laravel/laravel infinity-devlooper-laravel
+- npm install -D tailwindcss postcss autoprefixer 
