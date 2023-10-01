@@ -25,6 +25,4 @@ Route::get('/sign-up', function () {
     return view('signUp');
 })->name('sign-up');
 
-
-
-
+Route::post('/register','App\Http\Controllers\User@register')->name('register-user');
